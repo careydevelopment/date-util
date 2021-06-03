@@ -5,7 +5,7 @@
     <name>Date Utilities</name>
     <description>Convenience methods for Java 8+ date/time processing</description>
     <url>https://github.com/careydevelopment/date-util</url>
-    <version>1.0.0-RELEASE</version>
+    <version>1.2.0-RELEASE</version>
     
     <dependencies>
         <dependency>
