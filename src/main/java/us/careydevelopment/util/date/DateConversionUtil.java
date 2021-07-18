@@ -14,6 +14,19 @@ public class DateConversionUtil {
     //TODO: gotta handle leap years
     public static final Long NUMBER_OF_MILLISECONDS_IN_YEAR = NUMBER_OF_MILLISECONDS_IN_DAY * 365;
     
+    public static final Long NUMBER_OF_MILLISECONDS_IN_FOUR_WEEKS = NUMBER_OF_MILLISECONDS_IN_DAY * 28;
+    
+    
+    /**
+     * Converts days to milliseconds.
+     * 
+     * @param time
+     * @return the number of milliseconds
+     */
+    public static Long convertDaysToMilliseconds(Long days) {
+        return convertToMilliseconds(days, NUMBER_OF_MILLISECONDS_IN_DAY);
+    }
+    
     
     /**
      * Converts milliseconds to days.
@@ -45,6 +58,23 @@ public class DateConversionUtil {
      */
     public static Long convertToMinutes(Long time) {
         return convert(time, NUMBER_OF_MILLISECONDS_IN_MINUTE);
+    }
+    
+    
+    /**
+     * Converts the specified metric to a milliseconds.
+     * 
+     * @param time
+     * @return milliseconds
+     */
+    public static Long convertToMilliseconds(Long time, Long multiplier) {
+        Long converted = 0l;
+        
+        if (time != null && multiplier != null) {
+            converted = time * multiplier;
+        }
+        
+        return converted;
     }
     
     
