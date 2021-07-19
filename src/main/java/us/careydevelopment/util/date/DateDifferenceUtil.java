@@ -1,7 +1,5 @@
 package us.careydevelopment.util.date;
 
-import java.time.LocalDate;
-
 /**
  * Convenience methods for getting the difference between two date/time objects.
  * 
